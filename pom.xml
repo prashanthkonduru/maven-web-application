@@ -152,17 +152,7 @@
         <artifactId>maven-release-plugin</artifactId>
         <version>3.0.0-M1</version>
       </plugin>
-			<plugin>
-         <inherited>true</inherited>
-         <groupId>org.apache.maven.plugins</groupId>
-         <artifactId>maven-war-plugin</artifactId>
-         <version>${maven-war-plugin.version}</version>
-         <configuration>
-         <failOnMissingWebXml>false</failOnMissingWebXml>
-         <warName>${project.artifactId}</warName>
-         <attachClasses>true</attachClasses>
-         </configuration>
-         </plugin>  
+			
 		
 </plugins>
 	</build>
