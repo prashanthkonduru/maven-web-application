@@ -1,0 +1,26 @@
+def workspace;
+node{
+    stage("Checkout code")
+    {
+        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'a0e924f1-1dba-471d-892b-ab872a398b73', url: 'https://github.com/prashanthkonduru/maven-web-application.git']]])
+        echo "workspace is below"
+        workspace=pwd();
+        
+    }
+    stage("static code analysis")
+    {
+       echo "static code analysis"
+    }
+    stage("build")
+    {
+       echo "build the code"
+    }
+    stage("unit testing")
+    {
+       echo "perform unit testing"
+    }
+    stage("deliver")
+    {
+       echo "deliver the code"
+    }
+}
