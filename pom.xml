@@ -110,10 +110,15 @@
 	</distributionManagement>  -->
 	
     <distributionManagement>
+    <repository>
+        <id>jfrog</id>
+        <name>Vamsi-releases</name>
+        <url>http://ec2-13-235-245-110.ap-south-1.compute.amazonaws.com:8081/artifactory/vamsi-snapshot</url>
+    </repository>
     <snapshotRepository>
-        <id>snapshots</id>
-        <name>ip-172-31-47-216.ap-south-1.compute.internal-snapshots</name>
-        <url>http://ec2-13-233-223-252.ap-south-1.compute.amazonaws.com:8081/artifactory/libs-snapshot</url>
+        <id>jfrog</id>
+        <name>Vamsi-snapshots</name>
+        <url>http://ec2-13-235-245-110.ap-south-1.compute.amazonaws.com:8081/artifactory/vamsi-snapshot</url>
     </snapshotRepository>
     </distributionManagement>	
 	
