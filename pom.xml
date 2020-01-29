@@ -110,11 +110,16 @@
 	</distributionManagement>  -->
 	
     <distributionManagement>
-    <snapshotRepository>
-        <id>snapshots</id>
-        <name>ip-172-31-47-216.ap-south-1.compute.internal-snapshots</name>
-        <url>http://ec2-13-233-223-252.ap-south-1.compute.amazonaws.com:8081/artifactory/libs-snapshot</url>
-    </snapshotRepository>
+		<repository>
+			<id>central</id>
+			<name>ip-172-31-47-216.ap-south-1.compute.internal-releases</name>
+			<url>http://ec2-13-127-100-229.ap-south-1.compute.amazonaws.com:8081/artifactory/vamsi-snapshot</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>ip-172-31-47-216.ap-south-1.compute.internal-snapshots</name>
+			<url>http://ec2-13-127-100-229.ap-south-1.compute.amazonaws.com:8081/artifactory/vamsi-snapshot</url>
+		</snapshotRepository>
     </distributionManagement>	
 	
 	<build>
